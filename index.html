@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JADEX — Premium WordPress Solutions by Jerry John. Custom plugins, API integrations, WooCommerce, and full-stack development." />
+  <meta name="keywords" content="WordPress developer, custom plugins, WooCommerce, API integration, full-stack, freelance, Jerry John, JADEX" />
+  <meta name="author" content="Jerry John — JADEX" />
+  <meta name="theme-color" content="#101417" />
+  <meta property="og:title" content="JADEX — Premium WordPress Solutions" />
+  <meta property="og:description" content="Custom WP plugins, API integrations, WooCommerce & full-stack development by Jerry John." />
+  <meta property="og:type" content="website" />
+  <title>JADEX — Jerry John | Premium Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="JADEX — Home">
+        <img src="logo.png" alt="JADEX" class="nav-logo-img" width="40" height="40" />
+      </a>
+
+      <div class="nav-links" id="nav-links" role="menubar">
+        <a href="#about"    class="nav-link" role="menuitem">About</a>
+        <a href="#services" class="nav-link" role="menuitem">Services</a>
+        <a href="#work"     class="nav-link" role="menuitem">Work</a>
+        <a href="#contact"  class="nav-link" role="menuitem">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour theme" title="Toggle light / dark mode">
+          <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+        </button>
+        <a href="#contact" class="hire-btn">Hire Me</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#about"    class="mobile-nav-link">About</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#work"     class="mobile-nav-link">Work</a>
+      <a href="#contact"  class="mobile-nav-link">Contact</a>
+      <a href="#contact"  class="mobile-nav-link mobile-hire-link">Hire Me</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ================================================================
+         HERO SECTION
+         ================================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="shader-bg" aria-hidden="true">
+        <canvas id="shader-canvas"></canvas>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-grid">
+
+          <div class="hero-content reveal">
+            <div class="status-badge" role="status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="status-text">Available for freelance projects</span>
+            </div>
+
+            <h1 class="hero-name" id="hero-heading">
+              Jerry John
+              <span class="hero-sub">JADEX.</span>
+            </h1>
+
+            <p class="hero-typing typing-cursor" id="typing-text" aria-live="polite"></p>
+
+            <p class="hero-desc">
+              I am a <strong>Premium Web Developer</strong>, UI/UX Designer and AI-Assisted Web Creator.
+              I engineer high-converting modern websites and robust WordPress solutions that help businesses
+              grow online, engage their audience and dominate their market.
+            </p>
+
+            <div class="hero-cta">
+              <a href="https://wa.me/qr/54RFE77F2A5SI1" target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Hire Me on WhatsApp
+              </a>
+              <a href="#work" class="btn-secondary">View My Work</a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap reveal delay-200">
+            <div class="hero-image-card glow-effect glass-panel">
+              <img
+                src="https://iili.io/CCo6Ls1.jpg"
+                alt="Jerry John — JADEX founder, professional headshot"
+                class="hero-img"
+                loading="eager"
+                decoding="async"
+                width="448"
+                height="448"
+              />
+              <div class="hero-img-overlay" aria-hidden="true"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         STATS STRIP
+         ================================================================ -->
+    <section class="stats-strip" aria-label="Key statistics">
+      <div class="section-inner">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-item reveal delay-100">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item reveal delay-200">
+            <span class="stat-number">90%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-item reveal delay-300">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT SECTION
+         ================================================================ -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <div class="about-grid">
+
+          <div class="about-content reveal">
+            <h2 class="section-label">The Architect</h2>
+            <h3 class="section-headline" id="about-heading">
+              Authority in Code, Designs &amp; Speed Performance.
+            </h3>
+            <p class="body-text body-text--muted">
+              As a <strong>Problem Solver</strong> and <strong>Result-Driven Developer</strong>,
+              I don't just write code — I build client acquisition machines. My Activity leverages
+              modern design principles and cutting-edge AI tools to deliver premium websites
+              faster and with higher precision.
+            </p>
+            <p class="body-text body-text--muted">
+              Operating under the moniker <strong>JADEX</strong>, I specialize in architecting
+              robust, scalable WordPress solutions — from complex plugin development to seamless
+              API integrations. Whether you need a conversion-optimised landing page, modern reponsive design or a full
+              business platform, I ensure every pixel serves a purpose: generating revenue and
+              building trust for your brand.
+            </p>
+          </div>
+
+          <div class="skills-container reveal delay-200">
+            <h3 class="skills-heading">Technical Arsenal</h3>
+            <div class="skills-tags">
+              <span class="tag">HTML5 &amp; CSS3</span>
+              <span class="tag">Vanilla JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Responsive Architecture</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Custom Plugins</span>
+              <span class="tag">API Integration</span>
+              <span class="tag">WooCommerce</span>
+              <span class="tag">Web Performance</span>
+              <span class="tag">AI Tooling</span>
+              <span class="tag">CRO Psychology</span>
+            </div>
+          </div>
+          
+          </div>
+          </div>
+          </section>
+
+    <!-- ================================================================
+         PROCESS SECTION
+         ================================================================ -->
+    <section class="process-section" aria-labelledby="process-heading">
+      <div class="section-inner">
+        <h2 class="section-label reveal" id="process-heading">How I Work</h2>
+        <div class="process-grid">
+
+          <div class="process-step reveal">
+            <span class="process-num">01</span>
+            <h3 class="process-title">Discovery</h3>
+            <p class="process-desc">Deep-dive into your business goals, target audience, and competitors before writing a single line of codes.</p>
+          </div>
+
+          <div class="process-step reveal delay-100">
+            <span class="process-num">02</span>
+            <h3 class="process-title">Design</h3>
+            <p class="process-desc">High-fidelity wireframes and UI mockups built around conversion psychology — every element earns its place.</p>
+          </div>
+
+          <div class="process-step reveal delay-200">
+            <span class="process-num">03</span>
+            <h3 class="process-title">Build</h3>
+            <p class="process-desc">Clean, performant code — no bloated page builders. Custom WordPress plugins and pixel-perfect frontends delivered on schedule.</p>
+          </div>
+
+          <div class="process-step reveal delay-300">
+            <span class="process-num">04</span>
+            <h3 class="process-title">Launch &amp; Support</h3>
+            <p class="process-desc">Rigorous pre-launch QA, deployment, and ongoing 24/7 support to ensure your platform stays fast and profitable.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SERVICES SECTION — BENTO GRID
+         ================================================================ -->
+    <section class="services-section" id="services" aria-labelledby="services-heading">
+      <div class="section-inner">
+        <h2 class="section-label reveal" id="services-heading">Expertise</h2>
+
+        <div class="bento-grid" role="list">
+          <article class="service-card service-card--wide glass-panel glow-effect reveal" role="listitem">
+            <span class="material-symbols-outlined service-icon" aria-hidden="true">extension</span>
+            <h3 class="service-title">Custom WP Plugins</h3>
+            <p class="service-desc">Bespoke functionality engineered specifically for your business logic. No bloat, pure performance.</p>
+          </article>
+          <article class="service-card glass-panel glow-effect reveal delay-100" role="listitem">
+            <span class="material-symbols-outlined service-icon" aria-hidden="true">api</span>
+            <h3 class="service-title">API Integration</h3>
+            <p class="service-desc">Connecting ecosystems seamlessly and reliably.</p>
+          </article>
+          <article class="service-card glass-panel glow-effect reveal delay-200" role="listitem">
+            <span class="material-symbols-outlined service-icon" aria-hidden="true">shopping_cart</span>
+            <h3 class="service-title">WooCommerce</h3>
+            <p class="service-desc">Extending e-commerce capabilities for high-volume stores.</p>
+          </article>
+          <article class="service-card glass-panel glow-effect reveal delay-300" role="listitem">
+            <span class="material-symbols-outlined service-icon" aria-hidden="true">palette</span>
+            <h3 class="service-title">UI/UX Designer</h3>
+            <p class="service-desc">Crafting intuitive, high-converting interfaces with pixel-perfect precision and user psychology at the core.</p>
+          </article>
+          <article class="service-card service-card--wide glass-panel glow-effect reveal delay-300" role="listitem">
+            <span class="material-symbols-outlined service-icon" aria-hidden="true">code</span>
+            <h3 class="service-title">Full-Stack Development</h3>
+            <p class="service-desc">End-to-end solutions combining modern frontend frameworks with solid backend architecture.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         WORK SECTION — SLIDESHOW + PROJECTS
+         ================================================================ -->
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="section-inner">
+        <h2 class="section-label reveal" id="work-heading">Selected Works</h2>
+        <p class="section-sub reveal delay-100">High-performance websites and platforms that convert visitors into customers.</p>
+
+        <!-- ── IMAGE SLIDESHOW ───────────────────────────────────── -->
+        <!-- HOW TO ADD IMAGES:
+             Inside each <div class="slide">, set the src="" of the <img> tag
+             to your direct image URL. You can duplicate the slide block to add more slides.
+        -->
+        <div class="slideshow-wrap reveal delay-100">
+          <div class="slideshow-viewport" id="slideshow-viewport">
+            <div class="slideshow-track" id="slideshow-track">
+
+              <!-- SLIDE 1 — replace src="" with your image URL -->
+              <div class="slide">
+                <img src="https://iili.io/CCxvbI9.png" alt="Work screenshot 1" class="slide-img" />
+                <div class="slide-placeholder" aria-hidden="true">
+                  <span class="material-symbols-outlined">image</span>
+                  <span>Add image URL to src=""</span>
+                </div>
+              </div>
+
+              <!-- SLIDE 2 — replace src="" with your image URL -->
+              <div class="slide">
+                <img src="https://iili.io/CCxwOB4.jpg" alt="Work screenshot 2" class="slide-img" />
+                <div class="slide-placeholder" aria-hidden="true">
+                  <span class="material-symbols-outlined">image</span>
+                  <span>Add image URL to src=""</span>
+                </div>
+              </div>
+
+              <!-- SLIDE 3 — replace src="" with your image URL -->
+              <div class="slide">
+                <img src="https://iili.io/CCxw82S.png" alt="Work screenshot 3" class="slide-img" />
+                <div class="slide-placeholder" aria-hidden="true">
+                  <span class="material-symbols-outlined">image</span>
+                  <span>Add image URL to src=""</span>
+                </div>
+              </div>
+
+              <!-- ✦ Copy the block below to add more slides ✦
+              <div class="slide">
+                <img src="YOUR_IMAGE_URL_HERE" alt="Work screenshot" class="slide-img" />
+              </div>
+              -->
+
+            </div>
+          </div>
+
+          <div class="slideshow-controls" role="group" aria-label="Slideshow controls">
+            <button class="slide-btn slide-btn--prev" id="slide-prev" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="slide-dots" id="slide-dots" role="tablist" aria-label="Slides"></div>
+            <button class="slide-btn slide-btn--next" id="slide-next" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ── PROJECTS LIST ─────────────────────────────────────── -->
+        <div class="projects-grid">
+
+          <!-- Project: OnFunds -->
+          <article class="project-card glass-panel glow-effect reveal">
+            <div class="project-header">
+              <span class="project-badge">Platform</span>
+              <a href="https://onfunds.name.ng" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Visit OnFunds">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </a>
+            </div>
+            <h3 class="project-title">OnFunds</h3>
+            <p class="project-desc">
+              A full-featured earning platform built on WordPress where users accumulate virtual
+              currency (OFC), complete tasks, engage with offer walls, enter skill-based contests,
+              refer friends, and manage withdrawals — all powered by the custom
+              <code class="inline-code">onfunds-core</code> plugin.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">Custom Plugin</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <a href="https://onfunds.name.ng" target="_blank" rel="noopener noreferrer" class="project-visit">
+              Visit onfunds.name.ng
+              <span class="material-symbols-outlined project-visit-icon">arrow_forward</span>
+            </a>
+          </article>
+
+          <!-- Project: Jadex Custom Toolkit -->
+          <article class="project-card glass-panel glow-effect reveal delay-200">
+            <div class="project-header">
+              <span class="project-badge">Toolkit</span>
+            </div>
+            <h3 class="project-title">Jadex Custom Toolkit</h3>
+            <p class="project-desc">
+              A comprehensive suite of optimisation tools and custom post type generators built
+              specifically for high-performance WordPress environments. No bloat — precision
+              engineered for speed.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">WP CLI</span>
+              <span class="tech-tag">Performance</span>
+            </div>
+            <a href="#contact" class="project-visit">
+              Request Details
+              <span class="material-symbols-outlined project-visit-icon">arrow_forward</span>
+            </a>
+          </article>
+
+          <!-- Project: Careiva Home Care -->
+          <article class="project-card glass-panel glow-effect reveal delay-100">
+            <div class="project-header">
+              <span class="project-badge">Web Design</span>
+            </div>
+            <h3 class="project-title">Careiva Home Care</h3>
+            <p class="project-desc">
+              A premium, conversion-focused website for a professional home care service provider
+              operating across Kerala and Bangalore — built with trust-first design, service
+              showcases, and lead generation tailored for the healthcare sector.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5 &amp; CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">UI/UX Design</span>
+              <span class="tech-tag">CRO</span>
+            </div>
+            <a href="#contact" class="project-visit">
+              Request Details
+              <span class="material-symbols-outlined project-visit-icon">arrow_forward</span>
+            </a>
+          </article>
+
+          <!-- Project: ShopNShip -->
+          <article class="project-card glass-panel glow-effect reveal delay-300">
+            <div class="project-header">
+              <span class="project-badge">Plugin</span>
+            </div>
+            <h3 class="project-title">ShopNShip</h3>
+            <p class="project-desc">
+              A full-featured WordPress plugin powering a shop-and-ship / package forwarding
+              business — with automated address assignment, full package lifecycle tracking,
+              weight-based invoicing, and a complete customer portal.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">Custom Plugin</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">WooCommerce</span>
+            </div>
+            <a href="#contact" class="project-visit">
+              Request Details
+              <span class="material-symbols-outlined project-visit-icon">arrow_forward</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT SECTION
+         ================================================================ -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner">
+        <div class="contact-intro reveal">
+          <h2 class="section-label">Get In Touch</h2>
+          <h3 class="section-headline" id="contact-heading">
+            Let's build something that grows your business.
+          </h3>
+          <p class="body-text body-text--muted">
+            Available for high-end freelance projects worldwide. Reach out through any channel below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Direct Channels -->
+          <div class="contact-channels reveal">
+            <h4 class="channels-heading">Direct Channels</h4>
+            <p class="body-text body-text--muted" style="margin-bottom:1.5rem">
+              Prefer to chat instantly? Reach out through my direct links below.
+            </p>
+
+            <a href="https://wa.me/qr/54RFE77F2A5SI1" target="_blank" rel="noopener noreferrer" class="channel-link channel-link--whatsapp">
+              <span class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </span>
+              <span class="channel-text">
+                <span class="channel-name">WhatsApp</span>
+                <span class="channel-sub">Instant message</span>
+              </span>
+              <span class="channel-arrow material-symbols-outlined" aria-hidden="true">open_in_new</span>
+            </a>
+
+            <a href="https://t.me/akoredejeremiahadedipe" target="_blank" rel="noopener noreferrer" class="channel-link channel-link--telegram">
+              <span class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </span>
+              <span class="channel-text">
+                <span class="channel-name">Telegram</span>
+                <span class="channel-sub">@akoredejeremiahadedipe</span>
+              </span>
+              <span class="channel-arrow material-symbols-outlined" aria-hidden="true">open_in_new</span>
+            </a>
+
+            <a href="mailto:asjay2010@gmail.com" class="channel-link channel-link--email">
+              <span class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <span class="channel-text">
+                <span class="channel-name">Email</span>
+                <span class="channel-sub">asjay2010@gmail.com</span>
+              </span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/akoredejeremiahadedipe" target="_blank" rel="noopener noreferrer" class="channel-link channel-link--linkedin">
+              <span class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <span class="channel-text">
+                <span class="channel-name">LinkedIn</span>
+                <span class="channel-sub">akoredejeremiahadedipe</span>
+              </span>
+              <span class="channel-arrow material-symbols-outlined" aria-hidden="true">open_in_new</span>
+            </a>
+
+            <a href="https://github.com/korewrld" target="_blank" rel="noopener noreferrer" class="channel-link channel-link--github">
+              <span class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </span>
+              <span class="channel-text">
+                <span class="channel-name">GitHub</span>
+                <span class="channel-sub">@korewrld</span>
+              </span>
+              <span class="channel-arrow material-symbols-outlined" aria-hidden="true">open_in_new</span>
+            </a>
+          </div>
+
+          <!-- Email Form -->
+          <div class="contact-form-wrap glass-panel reveal delay-200">
+            <h4 class="channels-heading">Send a Message</h4>
+            <p class="body-text body-text--muted" style="margin-bottom:1.5rem">Send directly — no redirect, no page leave.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <input type="hidden" name="_subject" value="New Portfolio Lead!" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <div class="form-group">
+                <label class="form-label" for="cf-name">Full Name</label>
+                <input class="form-input" type="text" id="cf-name" name="name" required placeholder="John Doe" autocomplete="name" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="cf-email">Email Address</label>
+                <input class="form-input" type="email" id="cf-email" name="email" required placeholder="john@company.com" autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="cf-message">Project Details</label>
+                <textarea class="form-input form-textarea" id="cf-message" name="message" rows="5" required placeholder="Tell me about your goals and budget..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary form-submit" id="form-submit-btn">
+                <span class="submit-text">Send Message</span>
+                <span class="submit-loading" aria-hidden="true">
+                  <svg class="spin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/></svg>
+                  Sending…
+                </span>
+              </button>
+
+              <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo" aria-label="JADEX — Home">
+          <img src="logo.png" alt="JADEX" class="footer-logo-img" width="56" height="56" />
+        </a>
+        <p class="footer-tagline">Web Creator</p>
+      </div>
+
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://wa.me/qr/54RFE77F2A5SI1" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-social-link--whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://t.me/akoredejeremiahadedipe" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-social-link--telegram" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          <span>Telegram</span>
+        </a>
+        <a href="https://www.linkedin.com/in/akoredejeremiahadedipe" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-social-link--linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/korewrld" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-social-link--github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+
+      <p class="footer-copy">© <span id="footer-year"></span> Akorede Jeremiah Adedipe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+       ============================================================ -->
+  <a
+    href="https://wa.me/qr/54RFE77F2A5SI1?text=Hi%20Jerry,%20I%20found%20your%20portfolio%20and%20want%20to%20hire%20you."
+    class="fab-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
